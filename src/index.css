@@ -385,6 +385,31 @@ header {
   100% { opacity: 1; }
 }
 
+/* Form Inputs */
+.glass-input {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md);
+  color: var(--text-main);
+  font-family: inherit;
+  font-size: 1.1rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.glass-input::placeholder {
+  color: var(--text-muted);
+  opacity: 0.7;
+}
+
+.glass-input:focus {
+  border-color: var(--primary);
+  background: rgba(0, 210, 255, 0.05);
+  box-shadow: 0 0 15px rgba(0, 210, 255, 0.2);
+}
+
 @media (max-width: 640px) {
   .glass-card {
     padding: 1.5rem;
